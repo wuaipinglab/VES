@@ -3,7 +3,7 @@
 > Viral Evolution Simulator (VES), a diffusion model-based framework that mirrors the duality of viral evolution by design: forward noise injection simulates stochastic mutation, and reverse denoising recapitulates selective filtering.
 
 <p align="center">
-  <img src="assets/framework.png" width="80%" alt="Overall Framework">
+  <img src="assets/fig1.png" width="80%" alt="Overall Framework">
   <br>
   <em> Modelling viral evolution via diffusion models </em>
 </p>
@@ -14,32 +14,48 @@ Viral evolution arises from random mutations and natural selection, yet computat
 
 ## 🛠️ Requirements
 torch 2.8.0+cu128
+
 numpy==2.3.2
+
 pandas==2.3.3
+
 scikit-learn==1.7.2
+
 scipy==1.17.1
+
 biopython==1.85
+
 biotite==1.6.0
+
 matplotlib==3.10.5
+
 seaborn==0.13.2
+
 logomaker==0.8.7
+
 tqdm>=4.66
+
 tensorboard==2.20.0
+
 pyyaml==6.0.2
 
 ## 📂 Datasets
-### Training Data
+### Main Training Data
 - **Source**：GISAID
 - **Volume**：95,560 sequences for influenza virus (hemagglutinin protein); 55,246 sequences for SARS-CoV-2 viruses (spike protein)
 - **Pre-processing**：quality control and 100% redundancy removal
 - **Alignment**：multiple sequence alignment using MAFFT, selecting the Influenza A virus (A/WSN/1933(H1N1)) strain and the hCoV-19/Wuhan/WIV04/2019 (WIV04) strain of SARS-CoV-2 viruses as the wild type reference sequences for the respective alignments
 
-### Evaluation Data
+### Main Evaluation Data
 - **Source**：
-[1] How single mutations affect viral escape from broad and narrow antibodies to H1 influenza hemagglutinin
-[2] Accurate Measurement of the Effects of All Amino-Acid Mutations on Influenza Hemagglutinin
-[3] Complete mapping of viral escape from neutralizing antibodies
-[4] Deep mutational scanning of H5 hemagglutinin to inform influenza virus surveillance
+1. How single mutations affect viral escape from broad and narrow antibodies to H1 influenza hemagglutinin
+
+2. Accurate Measurement of the Effects of All Amino-Acid Mutations on Influenza Hemagglutinin
+
+3. Complete mapping of viral escape from neutralizing antibodies
+
+4. Deep mutational scanning of H5 hemagglutinin to inform influenza virus surveillance
+
 
 ## 🚀 Training
 | Parameter | Value |
