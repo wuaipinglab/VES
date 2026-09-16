@@ -16,9 +16,6 @@ The training and evaluation steps are provided in this repository, with data and
 
 During implementation, we referenced the code from [EVEscape](https://github.com/OATML-Markslab/EVEscape) and [EVE](https://github.com/OATML-Markslab/EVE) regarding data loading, mutation generation, and quantification calculations, making adjustments and modifications tailored to our work and carrying out more evaluation regarding viral evolution simulation and prediction.
 
-Please cite our paper as below if you find the research and code useful:
-
-
 
 
 ## 🛠️ Core Requirements
