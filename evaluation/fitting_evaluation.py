@@ -121,7 +121,7 @@ df["max_escape_experiment"] = np.log(logistic(standardization(df["max_escape_exp
 results = bootstrap_evaluation(
     df,
     y_true_col="max_escape_experiment",
-    y_pred_col="evescape",
+    y_pred_col="ves_prediction",
     n_sample=500,
     n_repeat=20,
     top_k=50
