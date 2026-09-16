@@ -8,9 +8,18 @@
   <em> Modelling viral evolution via diffusion models </em>
 </p>
 
-## 📌 Abstract
+## 📌 Summary
 
-Viral evolution arises from random mutations and natural selection, yet computational approaches rarely model these two forces in a unified way. We present Viral Evolution Simulator (VES), a diffusion model-based framework that mirrors this duality by design: forward noise injection simulates stochastic mutation, and reverse denoising recapitulates selective filtering. Trained solely on viral protein sequences, VES predicts mutational fitness without functional data, measuring fitness as the reconstruction difficulty of a mutated sequence relative to its wild-type counterpart. Across immune escape, receptor binding, and deep mutational scanning datasets, VES outperforms state-of-the-art generative models, achieving a 31.78% error reduction over the best baseline in immune escape mutation fitting evaluation. When trained on sequences collected before June 2024 and evaluated against H1N1 strains that later emerged, VES assigned high scores to 16 of 20 mutations that subsequently showed the sharpest frequency shifts. Extending to avian influenza H5, the framework reveals a dynamic interplay between antigenic escape and human-type receptor binding. Both functions dropped sharply in 2021, followed by a sustained rise in receptor affinity that could connect to recent epidemiological trends. VES offers a generalizable, sequence-only foundation for tracing evolutionary trajectories and prioritizing mutations for surveillance and experimental validation, pointing toward where functional efforts might matter most.
+This is the official implementation for the paper "A diffusion model of viral evolution predicts mutation fitness and evolutionary trajectories". We propose VES, a viral evolution simulator based on diffusion model to learn the viral evolution patterns and predict potential mutations that may increase the fitness of viruses in nature and bring health threat to human beings. 
+
+The training and evaluation steps are provided in this repository, with data and model checkpoints uploaded to Zenodo. Quantitative evaluation results can be found at "sampled_evaluation" folder, and model predictions for detailed analysis with more experimental data are uploaded at "results/model_prediction_with_exp_data" for your reference. 
+
+During implementation, we referenced the code from [EVEscape](https://github.com/OATML-Markslab/EVEscape) and [EVE](https://github.com/OATML-Markslab/EVE) regarding data loading, mutation generation, and quantification calculations, making adjustments and modifications tailored to our work and carrying out more evaluation regarding viral evolution simulation and prediction.
+
+Please cite our paper as below if you find the research and code useful:
+
+
+
 
 ## 🛠️ Core Requirements
 torch 2.8.0+cu128
@@ -52,7 +61,5 @@ biopython==1.85
 | Optimizer | AdamW |
 | Hardware | single NVIDIA GeForce RTX 5090 GPU |
 
-## 📖 Acknowledgements
 
-During implementation, we referenced the code from [EVEscape](https://github.com/OATML-Markslab/EVEscape) and [EVE](https://github.com/OATML-Markslab/EVE) regarding data processing, mutation generation, and quantification calculations, making adjustments and modifications tailored to our work. We sincerely acknowledge the contributions of the [Marks Lab](https://www.deboramarkslab.com/) and the [OATML group](https://oatml.cs.ox.ac.uk/) to this research field.
 
