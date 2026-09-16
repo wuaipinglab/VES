@@ -57,14 +57,14 @@ def gradient_penalty(critic: nn.Module, real: torch.Tensor, fake: torch.Tensor, 
 
 
 if __name__=='__main__':
-    parser = argparse.ArgumentParser(description='VAE')
+    parser = argparse.ArgumentParser(description='Baseline_ProteinGAN')
     parser.add_argument('--MSA_data_folder', default='./data/MSA', type=str, help='Folder where MSAs are stored')
     parser.add_argument('--MSA_list', default='./data/mappings/example_mapping.csv', type=str, help='List of proteins and corresponding MSA file name')
     parser.add_argument('--protein_index', default=0, type=int, help='Row index of protein in input mapping file')
     parser.add_argument('--MSA_weights_location', default= './data/weights', type=str, help='Location where weights for each sequence in the MSA will be stored')
     parser.add_argument('--theta_reweighting', type=float, help='Parameters for MSA sequence re-weighting')
     parser.add_argument('--model_name_suffix', default='Dec2_FLU_ProteinGAN', type=str, help='model checkpoint name will be the protein name followed by this suffix')
-    parser.add_argument('--training_logs_location', default='./logs/', type=str, help='Location of VAE model parameters')
+    parser.add_argument('--training_logs_location', default='./logs/', type=str, help='Location of model parameters')
     args = parser.parse_args()
 
     mapping_file = pd.read_csv(args.MSA_list)
