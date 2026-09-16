@@ -12,7 +12,7 @@
 
 This is the official implementation for the paper "A diffusion model of viral evolution predicts mutation fitness and evolutionary trajectories". We propose VES, a viral evolution simulator based on diffusion model to learn the viral evolution patterns and predict potential mutations that may increase the fitness of viruses in nature and bring health threat to human beings. 
 
-The training and evaluation steps are provided in this repository, with data and model checkpoints uploaded to Zenodo. Quantitative evaluation results can be found at "sampled_evaluation" folder, and model predictions for detailed analysis with more experimental data are uploaded at "results/model_prediction_with_exp_data" for your reference. 
+The training and evaluation steps are provided in this repository, with data and model checkpoints uploaded to Zenodo. Quantitative evaluation results can be found at "sampled_evaluation" folder, and model predictions for detailed analysis with more experimental data (evaluation data) are uploaded at "results/model_prediction_with_exp_data" for reference. 
 
 During implementation, we referenced the code from [EVEscape](https://github.com/OATML-Markslab/EVEscape) and [EVE](https://github.com/OATML-Markslab/EVE) regarding data loading, mutation generation, and quantification calculations, making adjustments and modifications tailored to our work and carrying out more evaluation regarding viral evolution simulation and prediction.
 
