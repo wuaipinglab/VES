@@ -12,7 +12,7 @@
 
 Viral evolution arises from random mutations and natural selection, yet computational approaches rarely model these two forces in a unified way. We present Viral Evolution Simulator (VES), a diffusion model-based framework that mirrors this duality by design: forward noise injection simulates stochastic mutation, and reverse denoising recapitulates selective filtering. Trained solely on viral protein sequences, VES predicts mutational fitness without functional data, measuring fitness as the reconstruction difficulty of a mutated sequence relative to its wild-type counterpart. Across immune escape, receptor binding, and deep mutational scanning datasets, VES outperforms state-of-the-art generative models, achieving a 31.78% error reduction over the best baseline in immune escape mutation fitting evaluation. When trained on sequences collected before June 2024 and evaluated against H1N1 strains that later emerged, VES assigned high scores to 16 of 20 mutations that subsequently showed the sharpest frequency shifts. Extending to avian influenza H5, the framework reveals a dynamic interplay between antigenic escape and human-type receptor binding. Both functions dropped sharply in 2021, followed by a sustained rise in receptor affinity that could connect to recent epidemiological trends. VES offers a generalizable, sequence-only foundation for tracing evolutionary trajectories and prioritizing mutations for surveillance and experimental validation, pointing toward where functional efforts might matter most.
 
-## 🛠️ Requirements
+## 🛠️ Core Requirements
 torch 2.8.0+cu128
 
 numpy==2.3.2
@@ -24,20 +24,6 @@ scikit-learn==1.7.2
 scipy==1.17.1
 
 biopython==1.85
-
-biotite==1.6.0
-
-matplotlib==3.10.5
-
-seaborn==0.13.2
-
-logomaker==0.8.7
-
-tqdm>=4.66
-
-tensorboard==2.20.0
-
-pyyaml==6.0.2
 
 ## 📂 Datasets
 ### Main Training Data
