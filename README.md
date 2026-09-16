@@ -26,13 +26,13 @@ scipy==1.17.1
 biopython==1.85
 
 ## 📂 Datasets
-### Main Training Data
+### Training Data
 - **Source**：GISAID
 - **Volume**：95,560 sequences for influenza virus (hemagglutinin protein); 55,246 sequences for SARS-CoV-2 viruses (spike protein)
 - **Pre-processing**：quality control and 100% redundancy removal
 - **Alignment**：multiple sequence alignment using MAFFT, selecting the Influenza A virus (A/WSN/1933(H1N1)) strain and the hCoV-19/Wuhan/WIV04/2019 (WIV04) strain of SARS-CoV-2 viruses as the wild type reference sequences for the respective alignments
 
-### Main Evaluation Data
+### Evaluation Data
 - **Source**：
 1. How single mutations affect viral escape from broad and narrow antibodies to H1 influenza hemagglutinin
 
