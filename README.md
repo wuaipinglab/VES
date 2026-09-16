@@ -3,7 +3,7 @@
 > Viral Evolution Simulator (VES), a diffusion model-based framework that mirrors the duality of viral evolution by design: forward noise injection simulates stochastic mutation, and reverse denoising recapitulates selective filtering.
 
 <p align="center">
-  <img src="assets/fig1.png" width="80%" alt="Overall Framework">
+  <img src="assets/demo-ves.png" width="80%" alt="Overall Framework">
   <br>
   <em> Modelling viral evolution via diffusion models </em>
 </p>
@@ -65,4 +65,8 @@ pyyaml==6.0.2
 | Epochs | 60 |
 | Optimizer | AdamW |
 | Hardware | single NVIDIA GeForce RTX 5090 GPU |
+
+## 📖 Acknowledgements
+
+During implementation, we referenced the code from [EVEscape](https://github.com/OATML-Markslab/EVEscape) and [EVE](https://github.com/OATML-Markslab/EVE) regarding data processing, mutation generation, and quantification calculations, making adjustments and modifications tailored to our work. We sincerely acknowledge the contributions of the [Marks Lab](https://www.deboramarkslab.com/) and the [OATML group](https://oatml.cs.ox.ac.uk/) to this research field.
 
