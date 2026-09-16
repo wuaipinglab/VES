@@ -70,11 +70,11 @@ class EMA:
                     esd[k] = msd[k]
 
 if __name__=='__main__':
-    parser = argparse.ArgumentParser(description='VAE')
+    parser = argparse.ArgumentParser(description='Baseline_autoregressive_transformer')
     parser.add_argument('--MSA_data_folder', default='./data/MSA', type=str, help='Folder where MSAs are stored')
     parser.add_argument('--MSA_list', default='./data/mappings/example_mapping.csv', type=str, help='List of proteins and corresponding MSA file name')
     parser.add_argument('--protein_index', default=0, type=int, help='Row index of protein in input mapping file')
-    parser.add_argument('--training_logs_location', default='./logs/', type=str, help='Location of VAE model parameters')
+    parser.add_argument('--training_logs_location', default='./logs/', type=str, help='Location of model parameters')
     parser.add_argument('--batch_size', default=36, type=int, help='Batch size for dataloader')
     parser.add_argument('--vocab_size', default=21, type=int, help='protein msa sequence vocabulary size')
     args = parser.parse_args()
