@@ -1,4 +1,4 @@
-protein_name,mutations,evol_indices
+protein_name,mutations,model_prediction
 aligned_single_processed_HA,wt,-0.0
 aligned_single_processed_HA,M1A,1.8024178
 aligned_single_processed_HA,M1C,1.8647118
